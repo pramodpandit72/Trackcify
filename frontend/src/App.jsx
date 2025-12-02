@@ -1,3 +1,11 @@
+// import NavBar from './components/layouts/Navbar';
+// import Footer from './components/layouts/Footer';
+// import { BrowserRouter } from 'react-router-dom';
+// import RoutesClient from './routes/routes';
+
+
+
+
 import { useEffect, useState } from "react"
 import axios from 'axios'
 
@@ -8,7 +16,7 @@ function App() {
     axios.get('/api/jokes')
     .then((response) => {
       // console.log(response.data);
-      setJokes(response.data)
+      // setJokes(response.data)
     })
     .catch((error) => {
       console.log(error) 
@@ -18,7 +26,7 @@ function App() {
   return (
     <>
 
-    <div className="bg-black text-white flex items-center text-2xl justify-center flex-col h-screen w-full">
+    {/* <div className="bg-black text-white flex items-center text-2xl justify-center flex-col h-screen w-full">
       <h1>Virtual</h1>
       <p>Jokes: {jokes.length}</p>
 
@@ -30,7 +38,7 @@ function App() {
           </div>
         ))
       } */}
-      {
+      {/* {
       Array.isArray(jokes) && jokes.map((joke) => (
         <div key={joke.id}>
           <h3>{joke.title}</h3>
@@ -38,7 +46,20 @@ function App() {
         </div>
       ))
     }
-    </div>
+    </div> */} */
+
+
+    {/* <BrowserRouter>
+        <div className={`min-h-[50vh] flex flex-col bg-gray-200 mt-25`}>
+          <NavBar />
+          <main>
+            <RoutesClient />
+          </main>
+          <Footer />
+        </div>
+      </BrowserRouter> */}
+
+
 
     </>
   )

@@ -1,1 +1,1 @@
-export const DB_NAME = "trancify"
+export const DB_NAME = "trackcify"
